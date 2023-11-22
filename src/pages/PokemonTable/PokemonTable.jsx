@@ -1,4 +1,3 @@
-import React from "react";
 import { SearchBar } from "../../components";
 
 import { useField } from "../../hooks/useField";

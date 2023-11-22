@@ -1,5 +1,6 @@
-import React from "react";
 import "./SearchBar.scss";
+import PropTypes from "prop-types";
+
 export default function SearchBar({ state, placeholder, icon }) {
   return (
     <div className='InputBar'>
@@ -12,3 +13,9 @@ export default function SearchBar({ state, placeholder, icon }) {
     </div>
   );
 }
+
+SearchBar.protoTypes = {
+  state: PropTypes.object.isRequired,
+  placeholder: PropTypes.string,
+  icon: PropTypes.any,
+};
