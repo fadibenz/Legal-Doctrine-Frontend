@@ -1,0 +1,13 @@
+@import "./base";
+@import "./variables";
+
+.Container {
+  width: 80vw;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .Container{
+    width:95;
+  }  
+}
