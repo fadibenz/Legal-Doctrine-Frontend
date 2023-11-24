@@ -2,12 +2,13 @@
 @import "./variables";
 
 .Container {
-  width: 80vw;
+  width: min(1200px, 100% - 3rem);
   margin: auto;
+  padding-bottom: 3em;
 }
 
-@media (max-width: 600px) {
-  .Container{
-    width:95;
-  }  
+@media (max-width: 650px) {
+  .Container {
+    width: 90vw;
+  }
 }

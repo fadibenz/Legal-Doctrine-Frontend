@@ -5,18 +5,17 @@ import { useField } from "../../hooks/useField";
 import { TbHeartPlus } from "react-icons/tb";
 import { TfiSearch } from "react-icons/tfi";
 
-import './PokemonTable.scss'
+import "./PokemonTable.scss";
+import DataTable from "./DataTable/DataTable";
 
 export default function PokemonTable() {
   const searchInput = useField("text");
   const powerTH = useField("number");
-  console.log('searchInput', searchInput)
-  console.log('powerTH', powerTH)
 
   return (
-    <section className="Container">
-      <article className="Summary">
-        <div className="Summary__Search">
+    <section className='Container'>
+      <article className='Summary'>
+        <div className='Summary__Search'>
           <SearchBar
             state={searchInput}
             placeholder={"Search..."}
@@ -28,12 +27,14 @@ export default function PokemonTable() {
             icon={<TbHeartPlus />}
           />
         </div>
-        <div className="Summary__Info">
-          <p >Min power: 235</p>
+        <div className='Summary__Info'>
+          <p>Min power: 235</p>
           <p>Max power: 540</p>
         </div>
       </article>
-      <article></article>
+      <article>
+        <DataTable />
+      </article>
     </section>
   );
 }

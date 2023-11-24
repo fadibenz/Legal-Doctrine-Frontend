@@ -4,10 +4,11 @@
 $Primary--color: #f4f6f8;
 $Secondary--color: #d4d5d6;
 
-$grey: #6e6e6e;
+$grey: #8a959f;
 
 // TYPOGRAPHY
 $Primary--font: "Montserrat", sans-serif;
+$fs-200: 0.9rem;
 $fs-300: 1rem;
 $fs-400: 1.125rem;
 $fs-500: 1.25rem;
@@ -23,3 +24,6 @@ $transition: 0.2s ease-in-out;
 
 $Base--margin: 1em;
 $Base--padding: 1em;
+
+$Box--Shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
