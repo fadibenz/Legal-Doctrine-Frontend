@@ -1,3 +1,4 @@
+
 import PokemonTable from "./pages/PokemonTable/PokemonTable";
 
 function App() {
