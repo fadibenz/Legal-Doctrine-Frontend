@@ -1,13 +1,5 @@
-import * as React from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import "./DataTable.scss";
-import { StyledEngineProvider } from "@mui/material/styles";
+
 
 const rows = [
   {
@@ -194,8 +186,8 @@ export default function DataTable() {
         <table aria-label='simple table' className='Table'>
           <thead className='Table__Head'>
             <tr className='Table__Head--Row'>
-              {tableHead.map((cellHead) => {
-                return <th className='Table__Head--Cell'>{cellHead}</th>;
+              {tableHead.map((cellHead, index) => {
+                return <th key={index} className='Table__Head--Cell'>{cellHead}</th>;
               })}
             </tr>
           </thead>
@@ -203,12 +195,11 @@ export default function DataTable() {
             {rows.map((row) => (
               <tr
                 key={row.name}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 className='Table__Body--Row'
               >
-                {Object.entries(row).map(([key, value]) => {
+                {Object.entries(row).map(([key, value], index) => {
                   return (
-                    <td data-cell={key} className='Table__Body--Cell'>
+                    <td data-cell={key} key={index} className='Table__Body--Cell'>
                       {value}
                     </td>
                   );
