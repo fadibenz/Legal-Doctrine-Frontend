@@ -15,8 +15,8 @@ No backend, just local data handled by Json-Server.
 ```
 │ ─── .github # CI/CD workflow
 │ ─── public
-│ │ ├─── pokemon.json # local pokemon data
-│ │ ├─── vite.svg # Placeholder 
+│ ├─── pokemon.json # local pokemon data
+│ ├─── vite.svg # Placeholder 
 │ ───src # Main application folder
 │ ├───assets # Application assets: Pictures, Icons. 
 │ ├───components # UI Components used
