@@ -1,4 +1,5 @@
 import "./DataTable.scss";
+import PropTypes from "prop-types";
 
 export default function DataTable({ data, tableHead }) {
   if (!data) {
@@ -6,7 +7,7 @@ export default function DataTable({ data, tableHead }) {
   }
 
   if (data.length === 0) {
-    return <h1 className="Table__Results">No results found</h1>;
+    return <h1 className='Table__Results'>No results found</h1>;
   }
 
   return (
@@ -40,3 +41,8 @@ export default function DataTable({ data, tableHead }) {
     </div>
   );
 }
+
+DataTable.protoTypes = {
+  data: PropTypes.object,
+  tableHead: PropTypes.object,
+};

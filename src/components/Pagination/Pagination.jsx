@@ -1,4 +1,5 @@
 import TablePagination from "@mui/material/TablePagination";
+import PropTypes from "prop-types";
 
 export default function Pagination({
   page,
@@ -21,3 +22,11 @@ export default function Pagination({
     </div>
   );
 }
+
+Pagination.protoTypes = {
+  page: PropTypes.number.isRequired,
+  count: PropTypes.number.isRequired,
+  rowsPerPage: PropTypes.number.isRequired,
+  handleChangePage: PropTypes.func,
+  handleChangeRowsPerPage: PropTypes.func,
+};
