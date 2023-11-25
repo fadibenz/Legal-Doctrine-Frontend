@@ -52,6 +52,15 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
 }
 
+
+
+.Table__Results {
+  text-align: center;
+  font-weight: 600;
+  margin-block: 3em;
+  font-size: 1.5rem;
+} 
+
 .Table__Head--Cell {
   background-color: $Primary--color;
   font-size: $fs-200;
