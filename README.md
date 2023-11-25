@@ -11,6 +11,8 @@ Backend API
 No backend, just local data handled by Json-Server.
 
 # Folder Structure
+
+```
 │ ─── .github # CI/CD workflow
 │ ─── public
 │ │ ├─── pokemon.json # local pokemon data
@@ -51,3 +53,4 @@ No backend, just local data handled by Json-Server.
 │ ───package.json # npm dependencies and run scripts
 │ ───Readme.md # Documentation
 │ ─── vite.config.js # Vite configuration
+```
