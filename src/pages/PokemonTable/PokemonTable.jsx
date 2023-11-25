@@ -1,13 +1,10 @@
-import { SearchBar } from "../../components";
-
 import { useField } from "../../hooks/useField";
 
 import { TbHeartPlus } from "react-icons/tb";
 import { TfiSearch } from "react-icons/tfi";
 
 import "./PokemonTable.scss";
-import DataTable from "./DataTable/DataTable";
-import Pagination from "../../components/Pagination/Pagination";
+import { Pagination, DataTable, SearchBar } from "../../components";
 
 import { useEffect, useState } from "react";
 import { getData } from "../../services/pokemon";
