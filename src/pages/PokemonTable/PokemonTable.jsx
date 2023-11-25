@@ -70,6 +70,7 @@ export default function PokemonTable() {
       handlePowerChange(response);
     };
     fetchData();
+    
   }, [page, rowsPerPage]);
 
   useEffect(() => {
@@ -83,6 +84,7 @@ export default function PokemonTable() {
       setFilterData(data);
       handlePowerChange(data);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchInput]);
 
   useEffect(() => {
@@ -96,6 +98,7 @@ export default function PokemonTable() {
       setFilterData(data);
       handlePowerChange(data);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [powerTH]);
 
   return (
