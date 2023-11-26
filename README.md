@@ -60,7 +60,7 @@ React, Scss, Axios, npm, Vite, Material UI.
 
 # Remarks
 
-1. The project is supported with a simple deployment pipline. you can find the project in github pages at this link [https://fadibenz.github.io/Legal-Doctrine-Frontend/]
+1. The project is supported with a simple CI/CD workflow using Github actions. you can find the project in github pages at this link [https://fadibenz.github.io/Legal-Doctrine-Frontend/]
 2. The view supports large size, medium size and a diffrent layout for small sizes
 3. I used a debounce function on the search to limit filtering times, the search might seem slow but it's intended.
 4. the search is by 'name' and the power is calccultated by summing all attributes of the pokemon.
