@@ -1,32 +1,4 @@
 @import "../../styles/variables";
 @import "../../styles/index.scss";
 
-.Summary {
-  
-  margin-block: $Base--margin * 2;
-  padding: $Base--padding * 1.3;
-  border-radius: $Border--radius * 2;
-  box-shadow: $Box--Shadow;
-  border: $Border;
-  
-  &__Search {
-    display: flex;
-    gap: 1.5em;
-    margin-bottom: $Base--margin;
-  }
 
-  &__Info {
-    font-weight: 500;
-    p:first-child {
-      margin-bottom: $Base--margin;
-    }
-  }
-}
-
-
-@media (max-width: 750px) {
-    .Summary__Search {
-        flex-direction: column;
-        gap: .5em;
-    }
-}
