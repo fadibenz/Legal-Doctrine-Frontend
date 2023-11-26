@@ -11,10 +11,12 @@ Backend API
 No backend, just local data handled by Json-Server.
 
 # Folder Structure
+
+```
 │ ─── .github # CI/CD workflow
 │ ─── public
-│ │ ├─── pokemon.json # local pokemon data
-│ │ ├─── vite.svg # Placeholder 
+│ ├─── pokemon.json # local pokemon data
+│ ├─── vite.svg # Placeholder 
 │ ───src # Main application folder
 │ ├───assets # Application assets: Pictures, Icons. 
 │ ├───components # UI Components used
@@ -28,6 +30,7 @@ No backend, just local data handled by Json-Server.
 │ │ │ └── SearchBar.scss # SearchBar stylesheeet
 │ ├───hooks
 │ │ ├───useField.js # hook for facillitating the control of input elements
+│ │ ├───useDebounce.js # hook for debouncing search for better optimization
 │ ├───services # Data manipulation
 │ ├───pages
 │ │ ├─── PokemonTable # View for pokemon table 
@@ -51,3 +54,4 @@ No backend, just local data handled by Json-Server.
 │ ───package.json # npm dependencies and run scripts
 │ ───Readme.md # Documentation
 │ ─── vite.config.js # Vite configuration
+```
