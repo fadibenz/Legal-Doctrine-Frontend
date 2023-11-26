@@ -1,14 +1,14 @@
 import { useField } from "../../hooks/useField";
 
-import { TbHeartPlus } from "react-icons/tb";
-import { TfiSearch } from "react-icons/tfi";
 
-import "./PokemonTable.scss";
-import { Pagination, DataTable, SearchBar } from "../../components";
+import { Pagination, DataTable } from "../../components";
 
 import { useEffect, useState } from "react";
 import { getData } from "../../services/pokemon";
 import { calculatePower } from "../../utils/helper";
+import SummarySection from "../../components/SummarySection/SummarySection";
+
+import "./PokemonTable.scss";
 
 const tableHead = [
   "ID",
@@ -23,8 +23,6 @@ const tableHead = [
 ];
 
 export default function PokemonTable() {
-  const searchInput = useField("text");
-  const powerTH = useField("number");
 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
@@ -70,7 +68,6 @@ export default function PokemonTable() {
       handlePowerChange(response);
     };
     fetchData();
-    
   }, [page, rowsPerPage]);
 
   useEffect(() => {
@@ -103,24 +100,7 @@ export default function PokemonTable() {
 
   return (
     <section className='Container'>
-      <article className='Summary'>
-        <div className='Summary__Search'>
-          <SearchBar
-            state={searchInput}
-            placeholder={"Search..."}
-            icon={<TfiSearch />}
-          />
-          <SearchBar
-            state={powerTH}
-            placeholder={"Power threshold"}
-            icon={<TbHeartPlus />}
-          />
-        </div>
-        <div className='Summary__Info'>
-          <p>Min power: {power.min}</p>
-          <p>Max power: {power.max}</p>
-        </div>
-      </article>
+      <SummarySection />
       <article>
         <DataTable data={filterData} tableHead={tableHead} />
         <Pagination
