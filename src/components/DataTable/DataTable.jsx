@@ -9,7 +9,6 @@ export default function DataTable({ data, tableHead }) {
   if (data.length === 0) {
     return <h1 className='Table__Results'>No results found</h1>;
   }
-
   return (
     <div className='Table__Container'>
       <table aria-label='simple table' className='Table'>

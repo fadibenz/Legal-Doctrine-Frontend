@@ -28,6 +28,7 @@ No backend, just local data handled by Json-Server.
 │ │ │ └── SearchBar.scss # SearchBar stylesheeet
 │ ├───hooks
 │ │ ├───useField.js # hook for facillitating the control of input elements
+│ │ ├───useDebounce.js # hook for debouncing search for better optimization
 │ ├───services # Data manipulation
 │ ├───pages
 │ │ ├─── PokemonTable # View for pokemon table 
