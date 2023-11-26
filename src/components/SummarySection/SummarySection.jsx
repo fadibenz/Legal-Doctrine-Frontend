@@ -9,6 +9,7 @@ import { useDebounce } from "../../hooks/useDebounce";
 import { useField } from "../../hooks/useField";
 
 import "./SummarySection.scss";
+import { calculatePower } from "../../utils/helper";
 
 import PropTypes from "prop-types";
 
