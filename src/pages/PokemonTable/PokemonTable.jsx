@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getData } from "../../services/pokemon";
 import {
   calculatePower,
@@ -80,6 +80,7 @@ export default function PokemonTable() {
     const newData = sliceData(changeData.filteredData, page, rowsPerPage);
     setChangeData({ ...changeData, slicedData: newData });
     handlePowerChange(newData, setPower);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, rowsPerPage, changeData.filteredData]);
 
   useEffect(() => {
@@ -102,6 +103,7 @@ export default function PokemonTable() {
       });
     };
     searchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debounceSearch, debouncePower, data]);
 
   return (
