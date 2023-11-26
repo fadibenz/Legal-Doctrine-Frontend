@@ -62,8 +62,8 @@ export default function SummarySection({
         />
       </div>
       <div className='Summary__Info'>
-        <p>Min power: {power.min}</p>
-        <p>Max power: {power.max}</p>
+        <p>Min power: {power.min != Infinity ? power.min : 0}</p>
+        <p>Max power: {power.max != -Infinity ? power.max : 0}</p>
       </div>
     </article>
   );
