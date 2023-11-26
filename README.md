@@ -1,8 +1,11 @@
-# Product
+# App
 
-The product is a simple pokemon data table with pagination that displays most of pokemons with their appropriate attributes (name, type, attack, defense..). In addition to the ability of search bu name and power thershold.
+The app is a simple pokemon data table with pagination that displays most of pokemons with their appropriate attributes (name, type, attack, defense..). In addition to the ability of search bu name and power thershold.
 
-Screenshots
+# Screenshots
+
+<img width="1064" alt="image" src="https://github.com/fadibenz/Legal-Doctrine-Frontend/assets/100878877/dd7a549d-1100-43b7-a511-2dee10ed39d4">
+
 
 # Technologies:
 
@@ -60,5 +63,6 @@ No backend, just local data handled by Json-Server.
 # Remarks
 
 1. The project is supported with a simple deployment pipline. you can find the project in github pages at this link [https://fadibenz.github.io/Legal-Doctrine-Frontend/]
-2. I used a debounce function on the search to limit filtering times, the search might seem slow but it's intended.
-3. the search is by 'name' and the power is calccultated by summing all attributes of the pokemon.
+2. The view supports large size, medium size and a diffrent layout for small sizes
+3. I used a debounce function on the search to limit filtering times, the search might seem slow but it's intended.
+4. the search is by 'name' and the power is calccultated by summing all attributes of the pokemon.
