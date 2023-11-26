@@ -9,10 +9,8 @@ The app is a simple pokemon data table with pagination that displays most of pok
 
 # Technologies:
 
-React, Scss, Axios, npm, Vite, Json-Sever, concurrently, Material UI.
+React, Scss, Axios, npm, Vite, Material UI.
 
-Backend API
-No backend, just local data handled by Json-Server.
 
 # Folder Structure
 
